@@ -348,7 +348,7 @@ svg.append("g")
    .style("font-family","Roboto")
    .call(d3.axisLeft(y).tickFormat(function(d){  
       // console.log(d)
-       return d;
+       return d.split("_")[1];
    }));
 
    // .replace(/ *\([^)]*\) */g, "");
